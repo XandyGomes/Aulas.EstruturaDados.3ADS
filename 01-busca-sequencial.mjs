@@ -1,4 +1,4 @@
-import { nomes } from './data/vetor-nomes.mjs'
+import { nomes } from "./data/vetor-nomes.mjs";
 
 function buscaSequencial(vetor, valorBusca) {
   for (let i = 0; i < vetor.length; i++) {
@@ -7,7 +7,9 @@ function buscaSequencial(vetor, valorBusca) {
   return -1;
 }
 
-console.log('Posição de ALEXANDRE: ', buscaSequencial(nomes, 'ALEXANDRE'))
+console.time("Buscando ALEXANDRE...");
+console.log("Posição de ALEXANDRE: ", buscaSequencial(nomes, "ALEXANDRE"));
+console.timeEnd("Buscando ALEXANDRE...");
 
 // const frutas = ["laranja", "maçã", "banana", "melancia", "abacaxi"];
 

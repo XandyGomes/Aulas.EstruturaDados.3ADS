@@ -1,4 +1,4 @@
-import { objNomes } from './data/vetor-obj-nomes.mjs'
+import { objNomes } from "./data/vetor-obj-nomes.mjs";
 
 function buscaSequencial(vetor, fnComp) {
   for (let i = 0; i < vetor.length; i++) {
@@ -10,6 +10,8 @@ function buscaSequencial(vetor, fnComp) {
 function comparaNome(obj) {
   return obj.first_name === "ALEXANDRE";
 }
+function comparaNome2(obj) {
+  return obj.alternative_names=== "ROSELMO";
+}
 
-console.log('Posição de ALEXANDRE', buscaSequencial(objNomes, comparaNome ))
-
+console.log("Posição de ROSELMO em alternative_names", buscaSequencial(objNomes, comparaNome2));

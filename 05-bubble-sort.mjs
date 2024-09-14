@@ -17,17 +17,17 @@ function bubbleSort(vetor){
     }while(trocou)
 }
 
-// let nums = [ 77, 44, 22, 33, 99, 55, 88, 0, 66, 11 ]
+let nums = [ 77, 44, 22, 33, 99, 55, 88, 0, 66, 11 ]
 
-// bubbleSort(nums)
-// console.log(nums)
-// console.log({pass, comps, trocas})
-
-import {nomes} from './data/nomes-desord.mjs'
-
-console.time('Tempos de ordenação')
-bubbleSort(nomes)
-console.timeEnd('Tempo de ordenação')
-
-console.log(nomes)
+bubbleSort(nums)
+console.log(nums)
 console.log({pass, comps, trocas})
+
+// import {nomes} from './data/nomes-desord.mjs'
+
+// console.time('Tempos de ordenação')
+// bubbleSort(nomes)
+// console.timeEnd('Tempo de ordenação')
+
+// console.log(nomes)
+// console.log({pass, comps, trocas})
